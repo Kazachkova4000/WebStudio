@@ -1,0 +1,9 @@
+.menu-btn {
+  height: 40px;
+  padding: 0;
+  border: none;
+
+  &:hover svg {
+    fill: $accent-color;
+  }
+}

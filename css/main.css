@@ -1,1 +1,126 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.logo, .navigation-link {
+  text-decoration: none;
+  display: block;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.menu-btn {
+  height: 40px;
+  padding: 0;
+  border: none;
+}
+
+.menu-btn:hover svg {
+  fill: #2196f3;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.logo-part-first {
+  color: #2196f3;
+}
+
+.logo-part-second {
+  color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .header .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-wrapper {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    display: none;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+  .menu-wrapper.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.logo-part-second-footer {
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
