@@ -2,8 +2,29 @@
   height: 40px;
   padding: 0;
   border: none;
+  background-color: transparent;
 
-  &:hover svg {
+  .icon-close {
+    display: none;
+  }
+
+  &:hover .icon-menu,
+  &:focus .icon-menu {
     fill: $accent-color;
+  }
+
+  &.is-open {
+    .icon-menu {
+      display: none;
+    }
+
+    .icon-close {
+      display: block;
+    }
+
+    &:focus .icon-close,
+    &:focus .icon-close {
+      fill: $accent-color;
+    }
   }
 }
