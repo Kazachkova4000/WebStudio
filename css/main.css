@@ -57,7 +57,7 @@ img {
 }
 
 .header-contacts,
-.navigation-list {
+.navigation-list, .special-list {
   list-style: none;
 }
 
@@ -105,6 +105,18 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+}
+
+.special {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .special {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .header {
@@ -422,6 +434,85 @@ img {
   .hero-title {
     font-size: 44px;
     line-height: 1.36;
+  }
+}
+
+.special-svg-wrapper {
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.special-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.special-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .special-list li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .special-svg-wrapper {
+    max-width: 450px;
+  }
+  .special-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .special-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .special-list-item {
+    width: 354px;
+  }
+  .special-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .special-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .special-list-item {
+    width: 270px;
+  }
+  .special-list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
