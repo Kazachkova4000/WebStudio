@@ -1,3 +1,86 @@
-// .hero {
-//   padding-top: 61px;
-// }
+.hero {
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  background-size: cover;
+  text-align: center;
+
+  // background-color: rgba(47, 48, 58, 0.4);
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $white-text-color;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/hero/hero-mobile.jpg);
+    // background-image: url(../img/hero/hero-mobile.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero/hero-mobile2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/hero/hero-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero/hero-tablet2x.jpg);
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/hero/hero-desctop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero/hero-desctop2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
