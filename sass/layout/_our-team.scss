@@ -16,24 +16,26 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-name {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 500;
+.our-team-name,
+.ouer-team-position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.our-team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+
   color: $dark-text-color;
 }
 
 .ouer-team-position {
   margin-bottom: 16px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+
   color: $grey-text-color;
 }
 
