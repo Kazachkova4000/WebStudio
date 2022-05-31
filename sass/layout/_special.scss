@@ -58,16 +58,13 @@
   .special-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .special-list-item {
     width: 354px;
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
 
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
@@ -78,9 +75,5 @@
 @media screen and (min-width: 1200px) {
   .special-list-item {
     width: 270px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }
