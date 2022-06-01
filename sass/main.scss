@@ -2,7 +2,7 @@
 @import './base/base';
 @import './base/container';
 @import './utils/placeholder';
-@import './components/button';
+@import './utils/common-for-buttons';
 @import './utils/common-for-sections';
 @import './layout/header';
 @import './layout/hero';
@@ -10,5 +10,5 @@
 @import './layout/what-we-do';
 @import './layout/our-team';
 @import './layout/clients';
-
 @import './layout/footer';
+@import './layout/portfolio';

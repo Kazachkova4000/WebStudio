@@ -1,3 +1,161 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    @extend %list;
+  }
+
+  .social-item-link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.footer-wrapper {
+  text-align: center;
+}
+
 .logo-part-second-footer {
   color: $white-text-color;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-address-link {
+  @extend %link;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footer-contact-text-color;
+
+  transition: color 250ms linear;
+
+  &:first-child {
+    color: $white-text-color;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-wrapper-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-text-color;
+}
+
+.footer-form {
+  position: relative;
+}
+
+.footer-input {
+  @extend %footer-form-font;
+  width: 450px;
+  max-width: 100%;
+
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.footer-label {
+  @extend %footer-form-font;
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.footer-input:not(:placeholder-shown) + .footer-label {
+  visibility: hidden;
+}
+
+.footer-form-svg {
+  fill: $white-text-color;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-wrapper:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and(min-width:768px) and(max-width:1199px) {
+  footer .container {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+
+  .footer-wrapper:last-child {
+    margin-top: 60px;
+    margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .container {
+    align-items: baseline;
+  }
+
+  .footer-address {
+    text-align: start;
+  }
+
+  .footer-address-link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .footer-form {
+    display: flex;
+  }
+
+  .footer-input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
