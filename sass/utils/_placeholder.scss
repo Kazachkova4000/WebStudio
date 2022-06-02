@@ -14,3 +14,28 @@
   letter-spacing: 0.03em;
   color: $footer-contact-text-color;
 }
+
+%modal-form-input {
+  width: 370px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: $grey-text-color;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    outline: none;
+    border-color: $accent-color;
+
+    & + .modal-input-label {
+      color: $accent-color;
+
+      & + .modal-input-svg {
+        fill: $accent-color;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+}
